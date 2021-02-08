@@ -1,0 +1,105 @@
+@import '../base/reset';
+@import '../utils/variables';
+
+.main_navBar{
+
+    background-color: $primary_color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+    .navBar_center{
+
+        width: 90%;
+        height: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .nav_links{
+            list-style: none;
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            font-weight: bolder;
+
+            li{
+                display: inline;
+
+                a{
+                    text-decoration: none;
+                    padding: .5rem;
+                    color: $white;
+                }
+            }
+
+            #btn_signup{
+                border: 1px solid $white;
+                transition: .3s;
+
+                &:hover{
+                    background-color: $white;
+                    color: $primary_color;
+                }
+            }
+        }
+
+        .menu_harmburger{
+
+            font-size: 1.5rem;
+
+        }
+
+        .show{
+            display: block;
+        }
+
+        .hide{
+            display: none;
+        }
+
+    }
+
+    .responsiveMenu{
+
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        background-color: $primary_color;
+        color: $white;
+        top: 10%;
+        right: 0;
+        display: flex;
+        flex-flow: column;
+        // justify-content: center;
+        // align-items: center;
+        transform: translateX(100%);
+        transition: .3s;
+
+        li{
+            list-style: none;
+            text-align: left;
+            padding: 1rem;
+        }
+
+        a{
+            color: $white;
+            display: block;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .responsiveMenu--shown{
+        transform: translateX(0%);
+    }
+
+}

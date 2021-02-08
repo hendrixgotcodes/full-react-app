@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main_navBar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; }
+  .main_navBar .navBar_center {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
