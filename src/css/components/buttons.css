@@ -1,0 +1,27 @@
+.btn {
+  padding: .5rem 1.1rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  font-weight: bolder; }
+  .btn a {
+    text-decoration: none; }
+
+.btn--primary {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #fff; }
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff; }
+  .btn--outline:hover {
+    background-color: #fff;
+    color: black; }
+
+.btn--large {
+  padding: .7rem 3rem;
+  font-size: 1.2rem; }

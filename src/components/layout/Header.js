@@ -1,6 +1,10 @@
 import React, {useEffect, useState} from "react";
-import {BrowserRouter as Router,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { FaTypo3, FaBars, FaTimes } from "react-icons/fa";
+
+import Button from '../utils/buttons';
+
+import "../../css/layout/header.css";
 
 
 function Header(){
@@ -18,7 +22,7 @@ function Header(){
 
         window.addEventListener("resize", ()=>{
 
-           setScreenSize(window.innerWidth <= 910 ? true : false);
+           setScreenSize(window.innerWidth <= 960 ? true : false);
 
         })
 
@@ -51,7 +55,7 @@ function Header(){
                         <Link to="/about">Products</Link>
                     </li>
                     <li>
-                        <Link className="btn_signup" to="/services">Sign Up</Link>
+                        <Button buttonStyle = "btn--outline" buttonSize="btn--medium" children="Sign Up" link="/signup" />
                     </li>
 
                 </ul>
@@ -74,7 +78,7 @@ function Header(){
                         <Link to="/services">Products</Link>
                     </li>
                     <li onClick={updateHarmburgerMenuIcon} >
-                        <Link className="btn_signup" to="/signup" >Sign Up</Link>
+                        <Button buttonStyle = "btn--outline" buttonSize="btn--large" children="Sign Up" link="/signup" />
                     </li>
 
                 </ul>

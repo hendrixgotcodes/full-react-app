@@ -80,6 +80,7 @@
         // align-items: center;
         transform: translateX(-100%);
         transition: .3s;
+        z-index: 2;
 
         .navList{
             list-style: none;
@@ -88,6 +89,7 @@
             padding: 1.5rem;
             width: 100%;
             margin-bottom: 2rem;
+            transition: .3s ease-in-out;
 
             &:hover{
                 background-color: $white;
