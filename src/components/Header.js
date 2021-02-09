@@ -41,17 +41,18 @@ function Header(){
 
                 <ul className={`nav_links ${isSmallScreen === true ? "hide" : "show"}`}>
                     
-                    <Router>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link id="btn_signup" to="/services">Services</Link>
-                        </li>
-                    </Router>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">Service</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">Products</Link>
+                    </li>
+                    <li>
+                        <Link className="btn_signup" to="/services">Sign Up</Link>
+                    </li>
 
                 </ul>
 
@@ -63,17 +64,18 @@ function Header(){
 
                 <ul className={`responsiveMenu ${isHarmburgerClicked === true ? "responsiveMenu--shown" : "responsiveMenu--hidden"}`}>
 
-                    <Router>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link id="btn_signup" to="/services">Services</Link>
-                        </li>
-                    </Router>
+                    <li className="navList" onClick={updateHarmburgerMenuIcon} >
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className="navList" onClick={updateHarmburgerMenuIcon} >
+                        <Link to="/about">Services</Link>
+                    </li>
+                    <li className="navList" onClick={updateHarmburgerMenuIcon} >
+                        <Link to="/services">Products</Link>
+                    </li>
+                    <li onClick={updateHarmburgerMenuIcon} >
+                        <Link className="btn_signup" to="/signup" >Sign Up</Link>
+                    </li>
 
                 </ul>
 

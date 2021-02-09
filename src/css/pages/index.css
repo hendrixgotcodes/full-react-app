@@ -19,9 +19,10 @@
     position: relative; }
     .main_navBar .navBar_center .nav_links {
       list-style: none;
-      width: 20%;
+      width: 35%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-size: 1.1rem;
       font-weight: bolder; }
       .main_navBar .navBar_center .nav_links li {
@@ -30,10 +31,10 @@
           text-decoration: none;
           padding: .5rem;
           color: #fff; }
-      .main_navBar .navBar_center .nav_links #btn_signup {
+      .main_navBar .navBar_center .nav_links .btn_signup {
         border: 1px solid #fff;
         transition: .3s; }
-        .main_navBar .navBar_center .nav_links #btn_signup:hover {
+        .main_navBar .navBar_center .nav_links .btn_signup:hover {
           background-color: #fff;
           color: #333; }
     .main_navBar .navBar_center .menu_harmburger {
@@ -44,26 +45,38 @@
       display: none; }
   .main_navBar .responsiveMenu {
     position: fixed;
-    width: 40%;
+    width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #383838;
     color: #fff;
     top: 10%;
-    right: 0;
+    left: 0;
     display: flex;
     flex-flow: column;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: .3s; }
-    .main_navBar .responsiveMenu li {
+    .main_navBar .responsiveMenu .navList {
       list-style: none;
-      text-align: left;
-      padding: 1rem; }
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 1.5rem;
+      width: 100%;
+      margin-bottom: 2rem; }
+      .main_navBar .responsiveMenu .navList:hover {
+        background-color: #fff; }
+      .main_navBar .responsiveMenu .navList:hover > a {
+        color: #333; }
     .main_navBar .responsiveMenu a {
       color: #fff;
-      display: block;
-      text-decoration: none; }
-      .main_navBar .responsiveMenu a:hover {
-        text-decoration: underline; }
+      text-decoration: none;
+      font-weight: bolder; }
+    .main_navBar .responsiveMenu .btn_signup {
+      border: 2px solid #fff;
+      transition: .3s;
+      padding: 1rem 8rem; }
+      .main_navBar .responsiveMenu .btn_signup:hover {
+        background-color: #fff;
+        color: #333; }
   .main_navBar .responsiveMenu--shown {
     transform: translateX(0%); }
 

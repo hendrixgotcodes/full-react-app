@@ -2,19 +2,20 @@ import './App.css';
 import './css/pages/index.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './components/Header.js';
-// import Index from "./components/pages/index.js";
+import Index from "./components/pages/index.js";
 
 function App() {
   return (
     <>
 
-      <Header/>
       
       <Router>
 
+      <Header/>
+
         <Switch>
 
-        {/* <Route path="/" component={Index}/> */}
+        <Route path="/" component={Index}/>
 
         </Switch>
 
