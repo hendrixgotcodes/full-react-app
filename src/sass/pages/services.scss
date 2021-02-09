@@ -1,0 +1,12 @@
+@import '../utils/variables';
+.page{
+
+    margin-top: 10vh;
+    background-color: lighten($color: #000000, $amount: 2);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 90vh;
+    color: $white;
+
+}

@@ -52,7 +52,7 @@ function Header(){
                         <Link to="/about">Service</Link>
                     </li>
                     <li>
-                        <Link to="/about">Products</Link>
+                        <Link to="/products">Products</Link>
                     </li>
                     <li>
                         <Button buttonStyle = "btn--outline" buttonSize="btn--medium" children="Sign Up" link="/signup" />
@@ -72,10 +72,10 @@ function Header(){
                         <Link to="/">Home</Link>
                     </li>
                     <li className="navList" onClick={updateHarmburgerMenuIcon} >
-                        <Link to="/about">Services</Link>
+                        <Link to="/services">Services</Link>
                     </li>
                     <li className="navList" onClick={updateHarmburgerMenuIcon} >
-                        <Link to="/services">Products</Link>
+                        <Link to="/products">Products</Link>
                     </li>
                     <li onClick={updateHarmburgerMenuIcon} >
                         <Button buttonStyle = "btn--outline" buttonSize="btn--large" children="Sign Up" link="/signup" />
