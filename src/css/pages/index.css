@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  position: fixed; }
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  position: fixed; }
+
+.index {
+  margin-top: 10vh; }
+
 .section {
   width: 100%; }
 

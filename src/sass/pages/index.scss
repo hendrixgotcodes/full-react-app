@@ -1,5 +1,9 @@
+@import '../base/reset';
 @import '../utils/variables';
 
+.index{
+    margin-top: 10vh;
+}
 .section{
 
     width: 100%;
@@ -51,6 +55,12 @@
         }
 
     }
+
+}
+
+#section2{
+
+    
 
 }
 

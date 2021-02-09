@@ -2,6 +2,7 @@ import React from 'react';
 import {FaPlayCircle} from 'react-icons/fa'
 
 import Button from '../utils/buttons';
+import Cards from '../utils/cards';
 
 import '../../css/pages/index.css';
 
@@ -9,27 +10,38 @@ function IndexPage(){
 
     return(
 
-        <div className="section" id="heroSection">
+        <div className="index">
 
-            <video src="/videos/video-1.mp4" loop muted autoPlay />
+            <div className="section" id="heroSection">
 
-            <div className="infoSection">
+                <video src="/videos/video-1.mp4" loop muted autoPlay />
 
-                <header>
-                    <h1>Adventure Awaits</h1>
-                    <p>What are you waiting for?</p>
-                </header>
+                <div className="infoSection">
 
-                <div className="btn_container">
+                    <header>
+                        <h1>Adventure Awaits</h1>
+                        <p>What are you waiting for?</p>
+                    </header>
 
-                    <Button buttonStyle="btn--outline" buttonSize="btn--large" children="Get Started" />
-                    <Button buttonSize="btn--large" >watch trailer <FaPlayCircle/></Button>
+                    <div className="btn_container">
+
+                        <Button buttonStyle="btn--outline" buttonSize="btn--large" children="Get Started" />
+                        <Button buttonSize="btn--large" >watch trailer <FaPlayCircle/></Button>
+
+                    </div>
 
                 </div>
 
             </div>
 
+            <div className="section" id="section2">
+
+                <Cards/>
+
+            </div>
+
         </div>
+
 
     )
 
