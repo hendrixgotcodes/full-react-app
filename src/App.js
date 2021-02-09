@@ -5,6 +5,7 @@ import Index from "./components/pages/index.js";
 import Products from './components/pages/products';
 import Services from './components/pages/services';
 import SignUp from './components/pages/signup';
+import Footer from './components/layout/footer';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/signup" component={SignUp}/>
 
           </Switch>
+        
+        <Footer/>
 
       </Router>
      
