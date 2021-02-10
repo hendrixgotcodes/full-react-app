@@ -5,7 +5,7 @@ function SignUp(){
 
     return(
 
-        <div className="page">
+        <div style={{background: `url(${process.env.PUBLIC_URL}/images/img-5.jpg) center center/cover no-repeat` }} className="page">
             <h1>Sign Up</h1>
         </div>
 

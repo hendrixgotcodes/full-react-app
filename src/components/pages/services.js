@@ -5,7 +5,7 @@ function Services(){
 
     return(
 
-        <div className="page">
+        <div style={{background: `url(${process.env.PUBLIC_URL}/images/img-1.jpg) center center/cover` }} className="page">
             <h1>Services</h1>
         </div>
 
