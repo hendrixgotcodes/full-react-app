@@ -25,8 +25,8 @@ function IndexPage(){
 
                     <div className="btn_container">
 
-                        <Button buttonStyle="btn--outline" buttonSize="btn--large" children="Get Started" />
-                        <Button buttonSize="btn--large" >watch trailer <FaPlayCircle/></Button>
+                        <Button link="/signup" buttonStyle="btn--outline" buttonSize="btn--large" children="Get Started" />
+                        <Button link="/services" buttonSize="btn--large" >watch trailer <FaPlayCircle/></Button>
 
                     </div>
 

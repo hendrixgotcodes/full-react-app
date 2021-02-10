@@ -41,7 +41,11 @@ function Header(){
 
             <center className="navBar_center">
 
-                <h1>TRVL <FaTypo3/></h1>
+                <h1>
+                    <Link to="/">
+                        TRVL <FaTypo3/>
+                    </Link>
+                </h1>
 
                 <ul className={`nav_links ${isSmallScreen === true ? "hide" : "show"}`}>
                     
@@ -49,7 +53,7 @@ function Header(){
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">Service</Link>
+                        <Link to="/services">Service</Link>
                     </li>
                     <li>
                         <Link to="/products">Products</Link>
